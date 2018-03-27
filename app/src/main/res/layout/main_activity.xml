@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/MainActivityRootRelativeLayout"
+    tools:context="ua.com.zzz.davimuka.musicplayer.activities.MainActivity">
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/SlidingTabs"
+        style="@style/MainActivityTabLayout"
+        app:tabIndicatorColor="@color/accent"
+        app:tabMode="fixed"
+        app:tabSelectedTextColor="@color/accent"
+        app:tabTextColor="@color/secondary_text" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/ViewPager"
+        style="@style/MainActivityViewPager" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/nowPlayingConstraintLayout"
+        style="@style/MainActivityNowPlayingConstraintLayout">
+
+        <ImageView
+            android:id="@+id/nowPlayingImage"
+            style="@style/MainActivityNowPlayingImageImageView"
+            android:contentDescription="@string/content_description_song_image"
+            android:src="@drawable/image_placeholder" />
+
+        <TextView
+            android:id="@+id/nowPlayingArtistAndTitleTextView"
+            style="@style/MainActivityNowPlayingTitleTextView"
+            android:text="@string/title_placeholder"
+            app:layout_constraintBottom_toTopOf="@id/nowPlayingPlayPauseImageView"
+            app:layout_constraintLeft_toRightOf="@id/nowPlayingImage"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_default="wrap" />
+
+
+        <ImageView
+            android:id="@+id/nowPlayingPreviousImageView"
+            style="@style/MainActivityNowPlayingButtonsImageViews"
+            android:contentDescription="@string/content_description_previous_song"
+            android:src="@drawable/ic_skip_previous"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/nowPlayingImage"
+            app:layout_constraintRight_toLeftOf="@id/nowPlayingPlayPauseImageView"
+            app:layout_constraintTop_toBottomOf="@id/nowPlayingArtistAndTitleTextView" />
+
+        <ImageView
+            android:id="@+id/nowPlayingPlayPauseImageView"
+            style="@style/MainActivityNowPlayingButtonsImageViews"
+            android:contentDescription="@string/content_description_play_pause"
+            android:src="@drawable/ic_play_arrow"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/nowPlayingPreviousImageView"
+            app:layout_constraintRight_toLeftOf="@id/nowPlayingNextImageView"
+            app:layout_constraintTop_toBottomOf="@id/nowPlayingArtistAndTitleTextView" />
+
+        <ImageView
+            android:id="@+id/nowPlayingNextImageView"
+            style="@style/MainActivityNowPlayingButtonsImageViews"
+            android:contentDescription="@string/content_description_next_song"
+            android:src="@drawable/ic_skip_next"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/nowPlayingPlayPauseImageView"
+            app:layout_constraintRight_toLeftOf="@id/nowPlayingLikeImageView"
+            app:layout_constraintTop_toBottomOf="@id/nowPlayingArtistAndTitleTextView" />
+
+        <ImageView
+            android:id="@+id/nowPlayingLikeImageView"
+            style="@style/MainActivityNowPlayingButtonsImageViews"
+            android:contentDescription="@string/content_description_like"
+            android:src="@drawable/ic_action_heart"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/nowPlayingNextImageView"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/nowPlayingArtistAndTitleTextView" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</RelativeLayout>

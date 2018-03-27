@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Song titles-->
+    <string-array name="song_titles" >
+        <item>Drunk Groove</item>
+        <item>We Wanna</item>
+        <item>The Horns</item>
+        <item>Best Friend</item>
+        <item>La Louze</item>
+        <item>Black Bacardi</item>
+        <item>I\'m an Albatraoz</item>
+        <item>I Can\'t Understand</item>
+        <item>Wild Card</item>
+        <item>La Cancion</item>
+    </string-array>
+
+    <!--Song artists-->
+    <string-array name="song_artists" >
+        <item>MARUV &amp; BOOSIN (Kolya Funk &amp; Mephisto Radio Edit)</item>
+        <item>Alexandra Stan &amp; Inna ft. Daddy Yankee (Menegatti &amp; Fatrix Remix Radio Edit)</item>
+        <item>DJ Katch ft. Greg Nice, DJ Kool &amp; Deborah Lee</item>
+        <item>Sofi Tuccer ft. NERVO, The Knocks &amp; Alisa Ueno</item>
+        <item>Shanguy</item>
+        <item>GAZIROVKA &amp; Don Diablo ft. Lavrushkin</item>
+        <item>AronChupa</item>
+        <item>Chocolate Puma &amp; Firebeatz</item>
+        <item>KSHMR (KRFW Remix)</item>
+        <item>Tim3bomb</item>
+    </string-array>
+</resources>

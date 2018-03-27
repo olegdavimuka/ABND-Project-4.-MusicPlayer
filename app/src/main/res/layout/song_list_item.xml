@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/songListItemConstraintLayout"
+    style="@style/SongListItemRootConstraintLayout">
+
+    <ImageView
+        android:id="@+id/songListItemImageImageView"
+        style="@style/SongListItemImageImageView"
+        android:contentDescription="@string/content_description_song_image"
+        android:src="@drawable/image_placeholder" />
+
+    <TextView
+        android:id="@+id/songListItemDurationTextView"
+        style="@style/SongListItemDurationTextView"
+        android:text="@string/duration_placeholder"
+        app:layout_constraintBottom_toTopOf="@id/songListItemTitleTextView"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintLeft_toRightOf="@id/songListItemImageImageView" />
+
+    <TextView
+        android:id="@+id/songListItemTitleTextView"
+        style="@style/SongListItemTitleTextView"
+        android:text="@string/title_placeholder"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintLeft_toRightOf="@id/songListItemImageImageView"
+        app:layout_constraintRight_toLeftOf="@id/songListItemLikeImageView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_default="wrap" />
+
+    <TextView
+        android:id="@+id/songListItemArtistTextView"
+        style="@style/SongListItemArtistTextView"
+        android:text="@string/artist_placeholder"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintLeft_toRightOf="@id/songListItemImageImageView"
+        app:layout_constraintRight_toLeftOf="@id/songListItemLikeImageView"
+        app:layout_constraintTop_toBottomOf="@id/songListItemTitleTextView"
+        app:layout_constraintWidth_default="wrap" />
+
+    <ImageView
+        android:id="@+id/songListItemLikeImageView"
+        style="@style/SongListItemLikeImageView"
+        android:contentDescription="@string/content_description_like"
+        android:src="@drawable/ic_action_heart_gray"
+        app:layout_constraintRight_toRightOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

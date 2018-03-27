@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Main activity-->
+    <dimen name="MainActivityNowPlayingConstraintLayout_layout_height">64dp</dimen>
+
+    <dimen name="MainActivityNowPlayingImageImageView_layout_width">64dp</dimen>
+
+    <dimen name="MainActivityNowPlayingTitleTextView_padding_start_end">16dp</dimen>
+
+    <!--Full info activity-->
+    <dimen name="FullInfoActivitySongInfoRelativeLayout_padding_top_bottom">8dp</dimen>
+    <dimen name="FullInfoActivitySongInfoRelativeLayout_padding_start_end">16dp</dimen>
+
+    <dimen name="FullInfoActivityTitleTextView_text_size">18sp</dimen>
+
+    <dimen name="FullInfoActivityButtonsConstraintLayout_padding_top_bottom">8dp</dimen>
+
+    <!--Song list item-->
+    <dimen name="SongListItemRootConstraintLayout_layout_height">64dp</dimen>
+
+    <dimen name="SongListItemImageImageView_layout_width">64dp</dimen>
+
+    <dimen name="SongListItemDurationTextView_padding_start_end">16dp</dimen>
+    <dimen name="SongListItemDurationTextView_text_size">12sp</dimen>
+
+    <dimen name="SongListItemTitleTextView_padding_start_end">16dp</dimen>
+
+    <dimen name="SongListItemArtistTextView_padding_start_end">16dp</dimen>
+    <dimen name="SongListItemArtistTextView_text_size">12sp</dimen>
+
+    <dimen name="SongListItemLikeImageView_padding_start_end">16dp</dimen>
+</resources>
